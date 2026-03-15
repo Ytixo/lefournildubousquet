@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Fournil du Bousquet</title>
-    <link rel="shortcut icon" type="image" href="assets/img/bread slice light.png"/>
+    <link rel="shortcut icon" type="image" href="assets/img/bread slice light.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -15,15 +15,20 @@
                 <i class="fas fa-bread-slice"></i>
                 <h1>Le Fournil du Bousquet</h1>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#produits">Produits</a></li>
-                    <li><a href="#a-propos">À Propos</a></li>
-                    <li><a href="#horaires">Horaires</a></li>
-                    <li><a href="login-register.html">Se connecter</a></li>
-                </ul>
-            </nav>
+            <div class="menu">
+                <button id="menu-btn" style="background:none;border:none;cursor:pointer;">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul id="menu-list">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#produits">Produits</a></li>
+                        <li><a href="#a-propos">À Propos</a></li>
+                        <li><a href="#horaires">Horaires</a></li>
+                        <li><a href="login-register.html">Se connecter</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -159,57 +164,7 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        // Smooth scrolling pour les liens du menu
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Animation au scroll
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animated');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.product-card, .about-text, .about-img, .hours, .contact').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Animation des cartes au passage de la souris
-        const productCards = document.querySelectorAll('.product-card');
-        productCards.forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.transform = 'translateY(-10px)';
-            });
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'translateY(0)';
-            });
-        });
-
-        // Gestion du formulaire de contact
-        const contactForm = document.querySelector('.contact-form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.');
-                this.reset();
-            });
-        }
-    </script>
+    
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
