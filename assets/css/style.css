@@ -30,6 +30,8 @@ header {
 }
 
 .menu {
+    display: flex;
+    align-items: center;
     position: relative;
     cursor: pointer;
     z-index: 1001;
@@ -378,4 +380,9 @@ footer {
     .about {
         flex-direction: column;
     }
+
+    .hours {
+        padding: 1rem;
+    }
+
 }

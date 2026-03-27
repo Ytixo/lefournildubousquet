@@ -1,0 +1,9 @@
+#items-container .item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#items-container .item input {
+    width: 100px;
+}
