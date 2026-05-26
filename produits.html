@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Produits – Le Fournil du Bousquet</title>
+    <link rel="shortcut icon" type="image" href="assets/img/bread slice light.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-produits.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-bread-slice"></i>
+                <h1>Le Fournil du Bousquet</h1>
+            </div>
+            <div class="menu">
+                <button id="menu-btn" style="background:none;border:none;cursor:pointer;">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul id="menu-list">
+                        <li><a href="index.html#accueil">Accueil</a></li>
+                        <li><a href="produits.html" class="active">Produits</a></li>
+                        <li><a href="index.html#a-propos">À Propos</a></li>
+                        <li><a href="index.html#horaires">Horaires</a></li>
+                        <li><a href="index.html#reviews">Avis</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="page-hero">
+        <h2>Nos Produits</h2>
+        <p>Pains, viennoiseries, gâteaux et épicerie fine — tout est préparé avec passion et des ingrédients de qualité.</p>
+    </section>
+
+    <!-- ===== FILTRES ===== -->
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Tout voir</button>
+        <button class="filter-btn" data-filter="pains">🍞 Pains</button>
+        <button class="filter-btn" data-filter="viennoiseries">🥐 Viennoiseries</button>
+        <button class="filter-btn" data-filter="gateaux">🎂 Gâteaux</button>
+        <button class="filter-btn" data-filter="sales">🥗 Salés</button>
+        <button class="filter-btn" data-filter="epicerie">🫙 Épicerie</button>
+    </div>
+
+    <!-- ===== CONTENU ===== -->
+    <main class="container">
+
+        <!-- ── PAINS ── -->
+        <section class="category-section" data-category="pains">
+            <h2 class="category-title"><i class="fas fa-bread-slice"></i> Pains</h2>
+            <div class="products-grid">
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/tourte.jpg" alt="Tourte Ronde" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-bread-slice\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tourte Ronde <span class="badge badge-bio">Bio</span></h3>
+                        <p>Pain traditionnel à base de farine de blé bio et de levain naturel. Mie dense et savoureuse.</p>
+                        <div class="product-footer">
+                            <span class="price">5,50 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/pain-campagne.jpg" alt="Pain de Campagne" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-bread-slice\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pain de Campagne</h3>
+                        <p>Croûte épaisse et croustillante, mie alvéolée. Idéal pour accompagner fromages et charcuteries.</p>
+                        <div class="product-footer">
+                            <span class="price">3,80 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/pain-levain.jpg" alt="Pain au Levain" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-bread-slice\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pain au Levain <span class="badge badge-bio">Bio</span></h3>
+                        <p>Fermenté lentement 24h pour une saveur légèrement acidulée et une conservation optimale.</p>
+                        <div class="product-footer">
+                            <span class="price">4,50 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/pain-cereales.jpg" alt="Pain aux Céréales" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-bread-slice\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pain aux Céréales</h3>
+                        <p>Mélange de graines de tournesol, sésame, lin et pavot. Riche en fibres et en saveurs.</p>
+                        <div class="product-footer">
+                            <span class="price">4,20 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/baguette.jpg" alt="Baguette Tradition" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-bread-slice\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Baguette Tradition</h3>
+                        <p>Façonnée à la main selon la méthode traditionnelle française. Croustillante à souhait.</p>
+                        <div class="product-footer">
+                            <span class="price">1,20 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/pain-seigle.jpg" alt="Pain de Seigle" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-bread-slice\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pain de Seigle</h3>
+                        <p>Dense et légèrement sucré, le pain de seigle se marie parfaitement avec le saumon fumé.</p>
+                        <div class="product-footer">
+                            <span class="price">4,00 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/pain-epeautre.jpg" alt="Pain à l'Épeautre" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-bread-slice\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pain à l'Épeautre <span class="badge badge-bio">Bio</span></h3>
+                        <p>Ancienne céréale au goût noisette, facile à digérer, moulue sur meule de pierre.</p>
+                        <div class="product-footer">
+                            <span class="price">5,00 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/ficelle.jpg" alt="Ficelle aux Herbes" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-bread-slice\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Ficelle aux Herbes</h3>
+                        <p>Fines baguettes agrémentées de romarin, thym et fleur de sel. Parfait à l'apéritif.</p>
+                        <div class="product-footer">
+                            <span class="price">1,50 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── VIENNOISERIES ── -->
+        <section class="category-section" data-category="viennoiseries">
+            <h2 class="category-title"><i class="fas fa-cookie-bite"></i> Viennoiseries</h2>
+            <div class="products-grid">
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/croissant.jpg" alt="Croissant" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-cookie-bite\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Croissant</h3>
+                        <p>Feuilletage au beurre fin, croustillant dehors, fondant dedans. La valeur sûre du matin.</p>
+                        <div class="product-footer">
+                            <span class="price">1,10 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/chocolatine.jpg" alt="Chocolatine" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-cookie-bite\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Chocolatine</h3>
+                        <p>Deux batons de chocolat noir dans une pâte feuilletée au beurre. Le plaisir coupable.</p>
+                        <div class="product-footer">
+                            <span class="price">1,10 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/brioche.jpg" alt="Brioche" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-cookie-bite\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Brioche</h3>
+                        <p>Brioche moelleuse et filante, beurrée à souhait, dorée au four. À partager (ou pas).</p>
+                        <div class="product-footer">
+                            <span class="price">6,00 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/pain-raisins.jpg" alt="Pain aux Raisins" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-cookie-bite\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pain aux Raisins</h3>
+                        <p>Spirale de pâte feuilletée, crème pâtissière vanille et raisins secs moelleux.</p>
+                        <div class="product-footer">
+                            <span class="price">1,30 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/chausson-pommes.jpg" alt="Chausson aux Pommes" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-cookie-bite\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Chausson aux Pommes</h3>
+                        <p>Compote de pommes maison dans une pâte feuilletée dorée. Une valeur sûre depuis toujours.</p>
+                        <div class="product-footer">
+                            <span class="price">1,30 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/brioche-paques.jpg" alt="Brioche de Pâques" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-cookie-bite\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Brioche Anis & Orange <span class="badge badge-new">Nouveauté</span></h3>
+                        <p>Spécialité saisonnière : brioche parfumée à l'anis et aux écorces d'orange confites.</p>
+                        <div class="product-footer">
+                            <span class="price">7,50 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/kouign.jpg" alt="Kouign-Amann" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-cookie-bite\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Kouign-Amann</h3>
+                        <p>Le gâteau breton caramélisé par excellence. Croustillant, fondant, irrésistible.</p>
+                        <div class="product-footer">
+                            <span class="price">2,00 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/palmier.jpg" alt="Palmier" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-cookie-bite\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Palmier</h3>
+                        <p>Biscuit feuilleté caramélisé en forme de cœur. Craquant à chaque bouchée.</p>
+                        <div class="product-footer">
+                            <span class="price">0,90 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── GÂTEAUX ── -->
+        <section class="category-section" data-category="gateaux">
+            <h2 class="category-title"><i class="fas fa-birthday-cake"></i> Gâteaux & Pâtisseries</h2>
+            <div class="products-grid">
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/numero-cake.jpg" alt="Number Cake" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-birthday-cake\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Number Cake <span class="badge badge-new">Sur commande</span></h3>
+                        <p>Gâteau chiffre personnalisé en choux vanille et chocolat. Idéal pour les anniversaires.</p>
+                        <div class="product-footer">
+                            <span class="price variable">Prix sur devis</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/tarte-fruits.jpg" alt="Tarte aux Fruits" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-birthday-cake\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tarte aux Fruits</h3>
+                        <p>Pâte sablée maison, crème pâtissière onctueuse, fruits frais de saison colorés.</p>
+                        <div class="product-footer">
+                            <span class="price">3,50 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/eclair.jpg" alt="Éclair au Chocolat" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-birthday-cake\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Éclair au Chocolat</h3>
+                        <p>Pâte à choux légère, ganache chocolat noir intense, glaçage brillant.</p>
+                        <div class="product-footer">
+                            <span class="price">2,50 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/chou-creme.jpg" alt="Chou à la Crème" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-birthday-cake\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Chou à la Crème</h3>
+                        <p>Chou généreux garni de crème chantilly maison. Simple, frais et irrésistible.</p>
+                        <div class="product-footer">
+                            <span class="price">2,20 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/fondant-chocolat.jpg" alt="Fondant au Chocolat" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-birthday-cake\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fondant au Chocolat</h3>
+                        <p>Cœur coulant chocolat noir, croûte légèrement craquante. À déguster tiède.</p>
+                        <div class="product-footer">
+                            <span class="price">2,80 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/flan.jpg" alt="Flan Pâtissier" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-birthday-cake\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Flan Pâtissier</h3>
+                        <p>Recette grand-mère : appareil à la vanille de Madagascar sur pâte brisée maison.</p>
+                        <div class="product-footer">
+                            <span class="price">2,80 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/madeleine.jpg" alt="Madeleines" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-birthday-cake\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Madeleines (×6)</h3>
+                        <p>Moelleuses, bombées, parfumées au citron ou au miel. Le goûter de l'enfance.</p>
+                        <div class="product-footer">
+                            <span class="price">3,00 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/gateau-anniversaire.jpg" alt="Gâteau d'Anniversaire" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-birthday-cake\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Gâteau Personnalisé <span class="badge badge-new">Sur commande</span></h3>
+                        <p>Entremets, layer cakes ou gâteaux décorés réalisés sur mesure pour vos occasions.</p>
+                        <div class="product-footer">
+                            <span class="price variable">Prix sur devis</span>
+                            <a href="#" class="btn-sm">Demander</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── SALÉS ── -->
+        <section class="category-section" data-category="sales">
+            <h2 class="category-title"><i class="fas fa-utensils"></i> Salés</h2>
+            <div class="products-grid">
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/sandwich.jpg" alt="Sandwich à la demande" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-utensils\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sandwich à la Demande</h3>
+                        <p>Composé selon vos envies sur notre pain maison. Garnitures fraîches, préparé sur place.</p>
+                        <div class="product-footer">
+                            <span class="price variable">À partir de 4,50 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/quiche.jpg" alt="Quiche Lorraine" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-utensils\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Quiche Lorraine</h3>
+                        <p>Appareil crème-œuf, lardons fumés, pâte brisée maison. Servie tiède.</p>
+                        <div class="product-footer">
+                            <span class="price">3,20 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/pizza-feuilletee.jpg" alt="Pizza Feuilletée" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-utensils\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pizza Feuilletée</h3>
+                        <p>Base feuilletée garnie tomate, mozza, jambon ou chorizo. Croustillante et généreuse.</p>
+                        <div class="product-footer">
+                            <span class="price">2,80 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/feuillete-fromage.jpg" alt="Feuilleté au Fromage" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-utensils\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Feuilleté Fromage & Jambon</h3>
+                        <p>Pâte feuilletée croustillante, jambon blanc et fromage fondant. Parfait pour le déjeuner.</p>
+                        <div class="product-footer">
+                            <span class="price">2,50 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/tarte-tomates.jpg" alt="Tarte aux Tomates" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-utensils\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tarte Tomates & Moutarde</h3>
+                        <p>Moutarde à l'ancienne, tomates en rondelles, herbes de Provence sur pâte croustillante.</p>
+                        <div class="product-footer">
+                            <span class="price">3,00 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/croissant-jambon.jpg" alt="Croissant Jambon-Fromage" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-utensils\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Croissant Jambon-Fromage</h3>
+                        <p>Notre croissant au beurre garni de jambon blanc et emmental fondu. Un classique.</p>
+                        <div class="product-footer">
+                            <span class="price">2,90 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── ÉPICERIE ── -->
+        <section class="category-section" data-category="epicerie">
+            <h2 class="category-title"><i class="fas fa-jar"></i> Épicerie Fine</h2>
+            <div class="products-grid">
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/confiture.jpg" alt="Confiture Artisanale" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-jar\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Confiture Artisanale</h3>
+                        <p>Confitures de saison faites maison : fraise, abricot, figue… selon les arrivages du marché.</p>
+                        <div class="product-footer">
+                            <span class="price">4,50 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/miel.jpg" alt="Miel Local" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-jar\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Miel Local <span class="badge badge-bio">Bio</span></h3>
+                        <p>Miel d'acacia ou de fleurs sauvages, produit par un apiculteur voisin de Targon.</p>
+                        <div class="product-footer">
+                            <span class="price">6,00 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/farine.jpg" alt="Farine Bio" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-jar\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Farine de Blé Bio (1 kg)</h3>
+                        <p>Farine T65 moulue sur meule de pierre, issue de céréales locales certifiées bio.</p>
+                        <div class="product-footer">
+                            <span class="price">3,50 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/levain.jpg" alt="Levain Maison" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-jar\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Levain Maison (250 g)</h3>
+                        <p>Chef levain de notre fournil, entretenu depuis plus de 10 ans. À nourrir et adopter !</p>
+                        <div class="product-footer">
+                            <span class="price">3,00 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/chocolat.jpg" alt="Chocolat Artisanal" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-jar\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tablette de Chocolat</h3>
+                        <p>Sélection de chocolats artisanaux de producteurs locaux — noir, lait, praliné.</p>
+                        <div class="product-footer">
+                            <span class="price">4,00 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/img/biscuits.jpg" alt="Biscuits Maison" onerror="this.style.display='none';this.parentNode.innerHTML='<i class=\'icon-placeholder fas fa-jar\'></i>'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Biscuits Maison (boîte)</h3>
+                        <p>Assortiment de sablés, croquants aux amandes et palets bretons. Idéal en cadeau.</p>
+                        <div class="product-footer">
+                            <span class="price">8,00 €</span>
+                            <a href="#" class="btn-sm">Commander</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <i class="fas fa-bread-slice"></i>
+                <h2>Le Fournil du Bousquet</h2>
+            </div>
+            <p>6 Grand Rue, 33760 Targon</p>
+            <p>Tél : 05 56 23 68 09</p>
+            <div class="copyright">
+                <p>&copy; 2026 Le Fournil du Bousquet. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="assets/js/script.js"></script>
+    <script>
+        // --- Menu burger (même logique que index) ---
+        const menuBtn = document.getElementById('menu-btn');
+        const menuList = document.getElementById('menu-list');
+        if (menuBtn && menuList) {
+            menuBtn.addEventListener('click', () => {
+                menuList.classList.toggle('open');
+            });
+            document.addEventListener('click', (e) => {
+                if (!menuBtn.contains(e.target) && !menuList.contains(e.target)) {
+                    menuList.classList.remove('open');
+                }
+            });
+        }
+
+        // --- Filtres par catégorie ---
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const categorySections = document.querySelectorAll('.category-section');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+                categorySections.forEach(section => {
+                    if (filter === 'all' || section.dataset.category === filter) {
+                        section.classList.remove('hidden');
+                    } else {
+                        section.classList.add('hidden');
+                    }
+                });
+
+                // Scroll doux vers la première section visible
+                if (filter !== 'all') {
+                    const target = document.querySelector(`.category-section[data-category="${filter}"]`);
+                    if (target) {
+                        setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

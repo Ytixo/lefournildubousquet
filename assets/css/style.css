@@ -177,6 +177,13 @@ section {
     margin: 0.5rem auto;
 }
 
+#produits a {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
